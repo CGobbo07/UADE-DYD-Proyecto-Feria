@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Feria Sustentable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/src/img/leaf.webp" alt="" style="height: 1.5rem; margin-right: 0.5rem;">
+                Feria Sustentable
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="paradas.html">Paradas</a>
+                <a href="productos.html">Productos</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modo-btn" class="modo-toggle" aria-label="Modo oscuro">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1 style="animation: fadeUp 1s ease;">Catálogo Sustentable</h1>
+            <p style="animation: fadeUp 1s ease 0.2s;">Descubrí los productos que podés encontrar en cada parada de la
+                feria: orgánicos, reutilizables y responsables con el ambiente.</p>
+        </section>
+
+        <section class="cards" style="animation: fadeUp 1s ease 0.4s;">
+            <div class="card producto">
+                <img src="/src/img/cosmeticanatural.png" alt="Cosmética natural">
+                <h3>🌿 Cosmética Natural</h3>
+                <p>Jabones, aceites y cremas elaboradas sin químicos ni testeos en animales.</p>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/Alimentos organicos.png" alt="Alimentos orgánicos">
+                <h3>🥗 Alimentos Orgánicos</h3>
+                <p>Frutas, verduras, snacks y conservas sin agroquímicos ni aditivos.</p>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/ropa ecologica.png" alt="Ropa ecológica">
+                <h3>👕 Ropa Ecológica</h3>
+                <p>Indumentaria hecha con materiales reciclados o biodegradables.</p>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/artesanias sustentables.png" alt="Artesanías">
+                <h3>🧵 Artesanías Sustentables</h3>
+                <p>Creaciones únicas hechas a mano con materiales reutilizados.</p>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/panelessolares.png" alt="Tecnología verde">
+                <h3>🔋 Tecnología Verde</h3>
+                <p>Paneles solares, luminarias LED y soluciones de ahorro energético.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Carlos Gobbo - Trabajo grupal - Materia Diseño y Desarrollo Web (15130)</p>
+        <p><a href="https://cgobbo07.github.io/feriaecologica/">Sitio Grupal</a></p>
+        <img src="/src/img/LogoUADE.png" alt="Logo UADE" class="logo-uade" />
+        <img src="/src/img/logo.png" alt="Logo Feria" class="logo-uade" />
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda - Feria Sustentable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/src/img/leaf.webp" alt="" style="height: 1.5rem; margin-right: 0.5rem;">
+                Feria Sustentable
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="paradas.html">Paradas</a>
+                <a href="productos.html">Productos</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="modo-btn" class="modo-toggle" aria-label="Modo oscuro">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Tienda Ecológica</h1>
+            <p>Elegí productos sustentables y apoyá el consumo responsable. Todos con materiales reciclables y
+                naturales.</p>
+        </section>
+
+        <section class="cards" id="productos-container">
+            <div class="card producto">
+                <img src="/src/img/bambu.png" alt="Cepillo de bambú">
+                <h3>Cepillo de bambú</h3>
+                <p>Precio: $10000</p>
+                <button class="agregar-btn" onclick="agregarAlCarrito(1)">Agregar</button>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/solido.png" alt="Shampoo sólido">
+                <h3>Shampoo sólido</h3>
+                <p>Precio: $2000</p>
+                <button class="agregar-btn" onclick="agregarAlCarrito(2)">Agregar</button>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/bag.png" alt="Bolsa reutilizable">
+                <h3>Bolsa reutilizable</h3>
+                <p>Precio: $2500</p>
+                <button class="agregar-btn" onclick="agregarAlCarrito(3)">Agregar</button>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/ecobottle.png" alt="Ecobotella">
+                <h3>Ecobotella</h3>
+                <p>Precio: $8500</p>
+                <button class="agregar-btn" onclick="agregarAlCarrito(4)">Agregar</button>
+            </div>
+            <div class="card producto">
+                <img src="/src/img/huerta en casa.png" alt="Kit de siembra">
+                <h3>Kit de siembra</h3>
+                <p>Precio: $12000</p>
+                <button class="agregar-btn" onclick="agregarAlCarrito(5)">Agregar</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div class="carrito-panel" id="carrito-panel">
+        <div class="carrito-header">
+            <h3>Tu carrito</h3>
+            <button id="cerrar-carrito" class="cerrar-carrito">×</button>
+        </div>
+        <ul id="carrito-lista" class="carrito-lista"></ul>
+        <div class="carrito-footer">
+            <p id="total" class="total">Total: $0</p>
+            <button id="comprar-btn" class="btn-comprar">Finalizar compra</button>
+        </div>
+    </div>
+
+    <button id="abrir-carrito" class="abrir-carrito">
+        🛒
+        <span id="contador-carrito" class="carrito-badge">0</span>
+    </button>
+
+
+
+    <footer class="footer">
+        <p>Carlos Gobbo - Trabajo grupal - Materia Diseño y Desarrollo Web (15130)</p>
+        <p><a href="https://cgobbo07.github.io/feriaecologica/">Sitio Grupal</a></p>
+        <img src="/src/img/LogoUADE.png" alt="Logo UADE" class="logo-uade" />
+        <img src="/src/img/logo.png" alt="Logo Feria" class="logo-uade" />
+    </footer>
+</body>
+
+</html>
